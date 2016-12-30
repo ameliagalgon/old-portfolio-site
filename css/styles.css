@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Corpid;
+  src: url(Corpid.otf); }
+#header {
+  padding: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  #header #logo img {
+    width: 100px;
+    margin: auto;
+    height: auto; }
+  #header #title {
+    text-transform: lowercase;
+    text-align: center;
+    width: 100%;
+    font-size: 2em; }
+
+nav {
+  padding: 0 20%; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0; }
+    nav ul li a {
+      text-decoration: none;
+      text-transform: lowercase;
+      color: #000; }
+    nav ul li a:hover {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=styles.css.map */
