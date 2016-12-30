@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Amelia Galgon</title>
+        <link href="css/lightbox.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
@@ -33,13 +34,19 @@
         
         <div id="portfolio">
             <div class="picture">
-                <img src="portfolio/self_portrait.jpg">
+                <a href="portfolio/self_portrait.jpg" data-lightbox="self_portrait">
+                    <img src="portfolio/self_portrait.jpg">
+                </a>
             </div>
             <div class="picture">
-                <img src="portfolio/florence.jpg">
+                <a href="portfolio/florence.jpg" data-lightbox="florence">
+                    <img src="portfolio/florence.jpg">
+                </a>
             </div>
             <div class="picture">
-                <img src="portfolio/nose.jpg">
+                <a href="portfolio/nose.jpg" data-lightbox="nose">
+                    <img src="portfolio/nose.jpg">
+                </a>
             </div>
         </div>
         <div id="projects"></div>
@@ -48,5 +55,8 @@
 		<footer>
     		
 		</footer>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="js/lightbox.js"></script>
 	</body>
 </html>
