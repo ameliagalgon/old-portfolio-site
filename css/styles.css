@@ -1,6 +1,9 @@
 @font-face {
   font-family: Corpid;
   src: url(Corpid.otf); }
+body {
+  font-family: Corpid; }
+
 #header {
   padding: 100px 0 0 0;
   display: flex;
@@ -14,7 +17,7 @@
     text-transform: lowercase;
     text-align: center;
     width: 100%;
-    font-size: 2em; }
+    font-size: 3em; }
 
 nav {
   padding: 0 20%; }
