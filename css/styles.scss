@@ -43,3 +43,16 @@ nav{
         }
     }
 }
+#portfolio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .picture{
+        width: 30%;
+        height: 20vw;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+}
