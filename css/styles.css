@@ -63,5 +63,10 @@ body {
         width: 100%;
         /* this is only a temporary fix */
         min-height: 100%; }
+  #container footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: .75em; }
 
 /*# sourceMappingURL=styles.css.map */
