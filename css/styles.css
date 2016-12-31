@@ -2,46 +2,66 @@
   font-family: Corpid;
   src: url(Corpid.otf); }
 body {
-  font-family: Corpid; }
+  font-family: Corpid;
+  margin: 0; }
 
 #header {
-  padding: 100px 0 0 0;
+  position: fixed;
+  width: 93%;
+  background-color: #fff;
+  padding: 10px 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap; }
-  #header #logo img {
-    width: 100px;
-    margin: auto;
-    height: auto; }
-  #header #title {
-    text-transform: lowercase;
-    text-align: center;
-    width: 100%;
-    font-size: 3em; }
-
-nav {
-  padding: 0 20%; }
-  nav ul {
-    list-style: none;
+  #header #navigation {
     display: flex;
-    justify-content: space-between;
-    padding: 0; }
-    nav ul li a {
-      text-decoration: none;
+    justify-content: flex-start;
+    width: 50%; }
+    #header #navigation a {
+      text-decoration: none; }
+    #header #navigation #logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.3em;
       text-transform: lowercase;
       color: #000; }
-    nav ul li a:hover {
-      text-decoration: underline; }
+      #header #navigation #logo img {
+        width: 50px;
+        margin: auto;
+        height: auto;
+        padding-right: 10px; }
+    #header #navigation nav {
+      width: 40%; }
+      #header #navigation nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start; }
+        #header #navigation nav ul li {
+          padding: 0 10%; }
+          #header #navigation nav ul li a {
+            text-decoration: none;
+            text-transform: lowercase;
+            color: #000; }
+          #header #navigation nav ul li a:hover {
+            text-decoration: underline; }
+  #header #social {
+    align-self: center; }
+    #header #social .icon img {
+      width: 30px; }
 
-#portfolio {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-  #portfolio .picture {
-    width: 30%;
-    height: 20vw;
-    overflow: hidden; }
-    #portfolio .picture img {
-      width: 100%; }
+#container {
+  padding-top: 70px; }
+  #container #portfolio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    #container #portfolio .picture {
+      width: 33.33%;
+      height: 20vw;
+      overflow: hidden; }
+      #container #portfolio .picture img {
+        width: 100%;
+        /* this is only a temporary fix */
+        min-height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
