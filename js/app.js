@@ -14,6 +14,24 @@ $(document).ready(function(){
         $next_page = $("#portfolio");
         switchPages();
     });
+    //projects link
+    $("#projects_link").click(function(){
+        $current_page = $(".active_page");
+        $next_page = $("#projects");
+        switchPages();
+    });
+    //about link
+    $("#about_link").click(function(){
+        $current_page = $(".active_page");
+        $next_page = $("#about");
+        switchPages();
+    });
+    //contact link
+    $("#contact_link").click(function(){
+       $current_page = $(".active_page");
+        $next_page = $("#contact");
+        switchPages();
+    });
 });
 
 function switchPages(){
