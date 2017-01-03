@@ -52,7 +52,6 @@ body {
 #container {
   padding-top: 70px; }
   #container #home {
-    background-color: yellow;
     height: 400px; }
   #container .page {
     display: none; }
@@ -81,13 +80,10 @@ body {
       justify-content: flex-start;
       flex-wrap: wrap; }
   #container #projects {
-    background-color: pink;
     height: 400px; }
   #container #about {
-    background-color: aqua;
     height: 400px; }
   #container #contact {
-    background-color: plum;
     height: 400px; }
   #container footer {
     display: flex;
@@ -106,5 +102,8 @@ body {
 
 .current {
   color: #000 !important; }
+
+.active_page_link {
+  border-bottom: 1px solid #000; }
 
 /*# sourceMappingURL=styles.css.map */

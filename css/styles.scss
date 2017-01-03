@@ -67,7 +67,7 @@ body{
 #container{
     padding-top: 70px;
     #home{
-        background-color: yellow;
+        //background-color: yellow;
         height: 400px;
     }
     .page{
@@ -108,15 +108,15 @@ body{
         }
     }
     #projects{
-        background-color: pink;
+        //background-color: pink;
         height: 400px;
     }
     #about{
-        background-color:aqua;
+        //background-color:aqua;
         height: 400px;
     }
     #contact{
-        background-color: plum;
+        //background-color: plum;
         height: 400px;
     }
     footer{
@@ -139,4 +139,7 @@ body{
 }
 .current{
     color: #000 !important;
+}
+.active_page_link{
+    border-bottom: 1px solid #000;
 }
