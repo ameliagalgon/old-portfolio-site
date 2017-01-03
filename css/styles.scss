@@ -5,6 +5,14 @@
 body{
     font-family: Corpid;
     margin: 0;
+    a{
+        text-decoration: none;
+        text-transform: lowercase;
+        color: #000;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
 }
 #header{
     position:fixed;
@@ -43,14 +51,6 @@ body{
                 justify-content: flex-start;
                 li{
                     padding: 0 10%;
-                    a{
-                        text-decoration: none;
-                        text-transform: lowercase;
-                        color: #000;
-                    }
-                    a:hover{
-                        text-decoration: underline;
-                    }
                 }
             }
         }
@@ -75,18 +75,37 @@ body{
     }
     #portfolio{
         //display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-wrap: wrap;
+        nav{
+            width: 15%;
+            ul{
+                list-style: none;
+                li{
+                    padding-bottom: 25px;
+                    a{
+                        font-size: .88em;
+                        color: #777;
+                    }
+                }
+            }
+        }
         .picture{
             width: 33.33%;
-            height: 20vw;
+            height: 15vw;
             overflow: hidden;
             img{
                 width: 100%;
                 /* this is only a temporary fix */
                 min-height: 100%;
             }
-        }   
+        }
+        #painting, #drawing, #design{
+            width: 75%;
+            //display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
     }
     #projects{
         background-color: pink;
@@ -108,7 +127,16 @@ body{
     }
 }
 
-//classes for showing and hiding pages
+//classes
 .active_page{
     display: flex !important;
+}
+.category{
+    display: none;
+}
+.current_category{
+    display: flex !important;
+}
+.current{
+    color: #000 !important;
 }
