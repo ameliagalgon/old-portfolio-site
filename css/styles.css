@@ -67,20 +67,22 @@ body {
         width: 100%;
         /* this is only a temporary fix */
         min-height: 100%; }
+  #container #projects {
+    background-color: pink;
+    height: 400px; }
+  #container #about {
+    background-color: aqua;
+    height: 400px; }
+  #container #contact {
+    background-color: plum;
+    height: 400px; }
   #container footer {
     display: flex;
     justify-content: center;
     width: 100%;
     font-size: .75em; }
 
-/*
-.page{
-    display: none;
-    width: 100%;
-    position: absolute;
-}
-*/
 .active_page {
-  display: block; }
+  display: flex !important; }
 
 /*# sourceMappingURL=styles.css.map */

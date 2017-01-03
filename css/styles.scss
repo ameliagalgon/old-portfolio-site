@@ -88,6 +88,18 @@ body{
             }
         }   
     }
+    #projects{
+        background-color: pink;
+        height: 400px;
+    }
+    #about{
+        background-color:aqua;
+        height: 400px;
+    }
+    #contact{
+        background-color: plum;
+        height: 400px;
+    }
     footer{
         display: flex;
         justify-content: center;
@@ -97,13 +109,6 @@ body{
 }
 
 //classes for showing and hiding pages
-/*
-.page{
-    display: none;
-    width: 100%;
-    position: absolute;
-}
-*/
 .active_page{
-    display: block;
+    display: flex !important;
 }
