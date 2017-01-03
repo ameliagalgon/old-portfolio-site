@@ -66,8 +66,15 @@ body{
 }
 #container{
     padding-top: 70px;
+    #home{
+        background-color: yellow;
+        height: 400px;
+    }
+    .page{
+        display: none;
+    }
     #portfolio{
-        display: flex;
+        //display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         .picture{
@@ -87,4 +94,16 @@ body{
         width: 100%;
         font-size: .75em;
     }
+}
+
+//classes for showing and hiding pages
+/*
+.page{
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+*/
+.active_page{
+    display: block;
 }

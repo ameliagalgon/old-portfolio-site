@@ -51,8 +51,12 @@ body {
 
 #container {
   padding-top: 70px; }
+  #container #home {
+    background-color: yellow;
+    height: 400px; }
+  #container .page {
+    display: none; }
   #container #portfolio {
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
     #container #portfolio .picture {
@@ -68,5 +72,15 @@ body {
     justify-content: center;
     width: 100%;
     font-size: .75em; }
+
+/*
+.page{
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+*/
+.active_page {
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */
