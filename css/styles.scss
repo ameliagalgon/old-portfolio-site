@@ -26,9 +26,6 @@ body{
         display: flex;
         justify-content: flex-start;
         width: 50%;
-        a{
-            text-decoration: none;
-        }
         #logo{
             display: flex;
             align-items: center;
@@ -42,6 +39,9 @@ body{
                 padding-right: 10px;
             }
         }
+        #logo:hover{
+            cursor: pointer;
+        }
     
         nav{
             width: 40%;
@@ -50,7 +50,14 @@ body{
                 display: flex;
                 justify-content: flex-start;
                 li{
-                    padding: 0 10%;
+                    padding: 0 10px;
+                    p{
+                        text-transform: lowercase;
+                        margin: 0;
+                    }
+                }
+                li:hover{
+                    cursor: pointer;
                 }
             }
         }
@@ -80,16 +87,19 @@ body{
         nav{
             width: 15%;
             ul{
+                padding-top: 20px;
                 list-style: none;
                 li{
                     padding-bottom: 25px;
-                    a{
-                        font-size: .88em;
-                        color: #777;
-                    }
-                    a:hover{
-                        text-decoration: none;
-                        border-bottom: 1px solid #000;
+                    font-size: .88em;
+                    color: #777;
+                    text-transform: lowercase;
+                }
+                li:hover{
+                    text-decoration: none;
+                    cursor: pointer;
+                    p{
+                        text-decoration: underline;
                     }
                 }
             }

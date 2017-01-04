@@ -21,7 +21,7 @@ $(document).ready(function(){
         $current_page = $(".active_page");
         $next_page = $("#portfolio");
         $current_page_link = $(".active_page_link");
-        $next_page_link = $(this);
+        $next_page_link = $("#portfolio_link p");
         switchPages();
         //in case there is already a current category
         $current_category = $(".current_category");
@@ -63,7 +63,7 @@ $(document).ready(function(){
         $current_page = $(".active_page");
         $next_page = $("#projects");
         $current_page_link = $(".active_page_link");
-        $next_page_link = $(this)
+        $next_page_link = $("#projects_link p");
         switchPages();
     });
     //about link
@@ -71,7 +71,7 @@ $(document).ready(function(){
         $current_page = $(".active_page");
         $next_page = $("#about");
         $current_page_link = $(".active_page_link");
-        $next_page_link = $(this);
+        $next_page_link = $("#about_link p");
         switchPages();
     });
     //contact link
@@ -79,7 +79,7 @@ $(document).ready(function(){
        $current_page = $(".active_page");
         $next_page = $("#contact");
         $current_page_link = $(".active_page_link");
-        $next_page_link = $(this);
+        $next_page_link = $("#contact_link p");
         switchPages();
     });
 });
