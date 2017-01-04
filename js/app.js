@@ -4,24 +4,18 @@ var $current_category = null;
 var $next_category = null;
 var $current_link = null;
 var $next_link = null;
-var $current_page_link = null;
-var $next_page_link = null;
 $(document).ready(function(){
    $("#home").addClass("active_page");
     //home page link
     $("#logo").click(function(){
         $current_page = $(".active_page");
         $next_page = $("#home");
-        $current_page_link = $(".active_page_link");
-        $next_page_link = null;
         switchPages();
     });
     //portfolio link
     $("#portfolio_link").click(function(){
         $current_page = $(".active_page");
         $next_page = $("#portfolio");
-        $current_page_link = $(".active_page_link");
-        $next_page_link = $(this);
         switchPages();
         //in case there is already a current category
         $current_category = $(".current_category");
@@ -62,24 +56,18 @@ $(document).ready(function(){
     $("#projects_link").click(function(){
         $current_page = $(".active_page");
         $next_page = $("#projects");
-        $current_page_link = $(".active_page_link");
-        $next_page_link = $(this);
         switchPages();
     });
     //about link
     $("#about_link").click(function(){
         $current_page = $(".active_page");
         $next_page = $("#about");
-        $current_page_link = $(".active_page_link");
-        $next_page_link = $(this);
         switchPages();
     });
     //contact link
     $("#contact_link").click(function(){
        $current_page = $(".active_page");
         $next_page = $("#contact");
-        $current_page_link = $(".active_page_link");
-        $next_page_link = $(this);
         switchPages();
     });
 });
@@ -87,10 +75,6 @@ $(document).ready(function(){
 function switchPages(){
     $current_page.removeClass("active_page");
     $next_page.addClass("active_page");
-    $current_page_link.removeClass("active_page_link");
-    if($next_page_link != null){
-        $next_page_link.addClass("active_page_link");
-    }
 }
 function switchCategories(){
     $current_category.removeClass("current_category");

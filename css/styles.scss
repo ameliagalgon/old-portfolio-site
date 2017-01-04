@@ -67,7 +67,7 @@ body{
 #container{
     padding-top: 70px;
     #home{
-        //background-color: yellow;
+        background-color: yellow;
         height: 400px;
     }
     .page{
@@ -86,6 +86,10 @@ body{
                     a{
                         font-size: .88em;
                         color: #777;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                        border-bottom: 1px solid #000;
                     }
                 }
             }
@@ -108,15 +112,56 @@ body{
         }
     }
     #projects{
-        //background-color: pink;
+        //display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .project{
+            width: 80%;
+            display: flex;
+            justify-content: flex-start;
+            padding: 15px;
+            margin: 10px 0;
+            //background-color: pink;
+            /* box shadow */
+            -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+            .image {
+                width: 25%;
+                padding-right: 30px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .info{
+                width: 75%;
+                .title{
+                    font-size: 1.6em;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+                .subtitle{
+                    font-weight: bold;
+                    font-size: 0.85em;
+                }
+            }
+            .links{
+                a{
+                    padding: 0 20px 0 0;
+                    color: #5DADE2;
+                }
+            }
+        }
+        background-color: pink;
         height: 400px;
     }
     #about{
-        //background-color:aqua;
+        background-color:aqua;
         height: 400px;
     }
     #contact{
-        //background-color: plum;
+        background-color: plum;
         height: 400px;
     }
     footer{
@@ -139,7 +184,4 @@ body{
 }
 .current{
     color: #000 !important;
-}
-.active_page_link{
-    border-bottom: 1px solid #000;
 }
