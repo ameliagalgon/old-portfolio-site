@@ -99,6 +99,10 @@ body{
                     font-size: .88em;
                     color: #777;
                     text-transform: lowercase;
+                    p{
+                        margin: 0;
+                        height: 40px;
+                    }
                 }
                 li:hover{
                     text-decoration: none;

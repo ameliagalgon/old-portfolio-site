@@ -123,6 +123,9 @@ body {
           font-size: .88em;
           color: #777;
           text-transform: lowercase; }
+          #container #portfolio nav ul li p {
+            margin: 0;
+            height: 40px; }
         #container #portfolio nav ul li:hover {
           text-decoration: none;
           cursor: pointer; }
