@@ -106,7 +106,7 @@ body{
         }
         .picture{
             width: 33.33%;
-            height: 15vw;
+            height: 19vw;
             overflow: hidden;
             img{
                 width: 100%;
@@ -118,7 +118,7 @@ body{
             filter: brightness(70%);
         }
         #painting, #drawing, #design{
-            width: 75%;
+            width: 85%;
             //display: flex;
             justify-content: flex-start;
             flex-wrap: wrap;
@@ -172,6 +172,7 @@ body{
     #projects{
         //display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         .project{
             width: 33%;
             height: 33vh;
@@ -186,11 +187,18 @@ body{
             }
             .overlay{
                 position: absolute;
-                text-align: center;
-                width:33%;
+                //text-align: center;
+                width:27%;
                 background: rgba(0,0,0,0.75);
                 color: #fff;
                 height: 33vh;
+                padding: 0 3%;
+                h3{
+                    /*
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    */
+                }
                 a{
                     color: #fff;
                 }

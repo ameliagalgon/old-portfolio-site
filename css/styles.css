@@ -125,7 +125,7 @@ body {
             text-decoration: underline; }
     #container #portfolio .picture {
       width: 33.33%;
-      height: 15vw;
+      height: 19vw;
       overflow: hidden; }
       #container #portfolio .picture img {
         width: 100%;
@@ -134,11 +134,12 @@ body {
     #container #portfolio .picture:hover {
       filter: brightness(70%); }
     #container #portfolio #painting, #container #portfolio #drawing, #container #portfolio #design {
-      width: 75%;
+      width: 85%;
       justify-content: flex-start;
       flex-wrap: wrap; }
   #container #projects {
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     #container #projects .project {
       width: 33%;
       height: 33vh; }
@@ -151,12 +152,17 @@ body {
           height: 33vh; }
       #container #projects .project .overlay {
         position: absolute;
-        text-align: center;
-        width: 33%;
+        width: 27%;
         background: rgba(0, 0, 0, 0.75);
         color: #fff;
         height: 33vh;
+        padding: 0 3%;
         display: none; }
+        #container #projects .project .overlay h3 {
+          /*
+          letter-spacing: 1px;
+          font-weight: bold;
+          */ }
         #container #projects .project .overlay a {
           color: #fff; }
     #container #projects .project:hover .overlay {
