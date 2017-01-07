@@ -131,6 +131,8 @@ body {
         width: 100%;
         /* this is only a temporary fix */
         min-height: 100%; }
+    #container #portfolio .picture:hover {
+      filter: brightness(70%); }
     #container #portfolio #painting, #container #portfolio #drawing, #container #portfolio #design {
       width: 75%;
       justify-content: flex-start;

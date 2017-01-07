@@ -114,6 +114,9 @@ body{
                 min-height: 100%;
             }
         }
+        .picture:hover{
+            filter: brightness(70%);
+        }
         #painting, #drawing, #design{
             width: 75%;
             //display: flex;
