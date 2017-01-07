@@ -75,7 +75,12 @@ body{
     padding-top: 70px;
     #home{
         //background-color: yellow;
-        height: 400px;
+        height: 85vh;
+        width: 100vw;
+        background-image: url(../portfolio/self_portrait.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
     .page{
         display: none;
@@ -174,11 +179,11 @@ body{
         justify-content: center;
         flex-wrap: wrap;
         .project{
-            width: 33%;
+            width: 33.33%;
             height: 33vh;
             .background-image{
                 position: absolute;
-                width: 33%;
+                width: 33.33%;
                 height: 33vh;
                 img{
                     width:100%;
@@ -188,7 +193,7 @@ body{
             .overlay{
                 position: absolute;
                 //text-align: center;
-                width:27%;
+                width:27.33%;
                 background: rgba(0,0,0,0.75);
                 color: #fff;
                 height: 33vh;
