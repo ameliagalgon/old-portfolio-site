@@ -85,16 +85,16 @@ $(document).ready(function(){
 });
 
 function switchPages(){
-    $current_page.removeClass("active_page");
-    $next_page.addClass("active_page");
+    $current_page.fadeOut(0).removeClass("active_page");
+    $next_page.fadeIn(500).addClass("active_page");
     $current_page_link.removeClass("active_page_link");
     if($next_page_link != null){
         $next_page_link.addClass("active_page_link");
     }
 }
 function switchCategories(){
-    $current_category.removeClass("current_category");
-    $next_category.addClass("current_category");
+    $current_category.fadeOut(0).removeClass("current_category");
+    $next_category.fadeIn(500).addClass("current_category");
     $current_link.removeClass("current");
     $next_link.addClass("current");
 }
