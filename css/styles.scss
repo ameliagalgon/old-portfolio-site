@@ -16,6 +16,7 @@ body{
 }
 #header{
     position:fixed;
+    z-index: 1;
     width: 93%;
     background-color: #fff;
     padding: 10px 50px;
@@ -92,6 +93,7 @@ body{
         nav{
             width: 15%;
             ul{
+                position: fixed;
                 padding-top: 20px;
                 list-style: none;
                 li{
