@@ -135,92 +135,56 @@ body{
             flex-wrap: wrap;
         }
     }
-    /*
     #projects{
-        //display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        .project{
-            width: 80%;
-            display: flex;
-            justify-content: flex-start;
-            padding: 15px;
-            margin: 10px 0;
-            //background-color: pink;
+        #project_info{
+            width: 25%;
+            text-align: right;
+            //for when project info has a discription
             
-            -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
-            -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
-            box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
-            .image {
-                width: 25%;
-                padding-right: 30px;
-                img{
-                    width: 100%;
-                    height: auto;
-                }
+            h3{
+                padding: 0 20px;
+                font-size: 2em;
+                margin-top: 15px;
+                text-transform: lowercase;
             }
-            .info{
-                width: 75%;
-                .title{
-                    font-size: 1.6em;
-                    font-weight: bold;
-                    letter-spacing: 1px;
-                }
-                .subtitle{
-                    font-weight: bold;
-                    font-size: 0.85em;
-                }
+            p{
+                padding: 0 20px;
+                line-height: 23px;
             }
-            .links{
-                a{
-                    padding: 0 20px 0 0;
-                    color: #5DADE2;
-                }
+            a{
+                padding: 0 20px;
+                color: #555;
             }
         }
-    }
-    */
-    #projects{
+        
         //display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
-        .project{
-            width: 33.33%;
-            height: 33vh;
-            .background-image{
-                position: absolute;
+        #project_content{
+            width: 75%;
+            display:flex;
+            flex-wrap: wrap;
+            .project{
                 width: 33.33%;
-                height: 33vh;
-                img{
-                    width:100%;
-                    height:33vh;
+                //height: 33vh;
+                .background-image{
+                    position: absolute;
+                    //width: 33.33%;
+                    height: 33vh;
+                    img{
+                        width:100%;
+                        height:33vh;
+                    }
+                }
+                .discription{
+                    display: none;
                 }
             }
-            .overlay{
-                position: absolute;
-                //text-align: center;
-                width:27.33%;
-                background: rgba(0,0,0,0.75);
-                color: #fff;
-                height: 33vh;
-                padding: 0 3%;
-                h3{
-                    /*
-                    letter-spacing: 1px;
-                    font-weight: bold;
-                    */
-                }
-                a{
-                    color: #fff;
-                }
-                display: none;
+            .project:hover{
+                filter: brightness(70%);
             }
         }
-        .project:hover{
-            .overlay{
-                display: block;
-            }
-        }
+        
     }
     #about{
         //background-color:aqua;

@@ -82,6 +82,13 @@ $(document).ready(function(){
         $next_page_link = $("#contact_link p");
         switchPages();
     });
+    
+    //if a project is clicked, show the discription of that project
+    $(".project").click(function(){
+        var htmlString = $(this).find(".discription").html();
+        //alert(htmlString);
+        $("#project_info").html(htmlString);
+    });
 });
 
 function switchPages(){
@@ -91,6 +98,8 @@ function switchPages(){
     if($next_page_link != null){
         $next_page_link.addClass("active_page_link");
     }
+    //clear the html of the project info
+    $("#project_info").html('');
 }
 function switchCategories(){
     $current_category.fadeOut(0).removeClass("current_category");
