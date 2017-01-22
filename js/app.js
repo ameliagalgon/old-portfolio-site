@@ -87,7 +87,7 @@ $(document).ready(function(){
     $(".project").click(function(){
         var htmlString = $(this).find(".discription").html();
         //alert(htmlString);
-        $("#project_info").html(htmlString);
+        $("#project_info").html("<div class='string animated fadeInUp'>" + htmlString + "<div>"); /*add an fade in animation to the htmlString*/
     });
 });
 

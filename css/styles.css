@@ -119,14 +119,20 @@ body {
       #container #projects #project_info a {
         padding: 0 20px;
         color: #555; }
+      #container #projects #project_info .string {
+        position: fixed;
+        width: 23%; }
     #container #projects #project_content {
       width: 75%;
+      position: relative;
       display: flex;
       flex-wrap: wrap; }
       #container #projects #project_content .project {
-        width: 33.33%; }
+        width: 33.33%;
+        position: relative; }
         #container #projects #project_content .project .background-image {
           position: absolute;
+          filter: brightness(20%);
           height: 33vh; }
           #container #projects #project_content .project .background-image img {
             width: 100%;
@@ -134,7 +140,21 @@ body {
         #container #projects #project_content .project .discription {
           display: none; }
       #container #projects #project_content .project:hover {
-        filter: brightness(70%); }
+        cursor: pointer; }
+        #container #projects #project_content .project:hover .background-image {
+          filter: brightness(100%); }
+        #container #projects #project_content .project:hover .overlay {
+          display: none; }
+      #container #projects #project_content .overlay {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 49px; }
+        #container #projects #project_content .overlay img {
+          width: 35%;
+          height: auto; }
   #container #about {
     height: 400px; }
   #container #contact {
@@ -161,5 +181,8 @@ body {
 
 .active_page_link {
   border-bottom: 1px solid #000 !important; }
+
+.fadeInUp {
+  animation-duration: 0.5s; }
 
 /*# sourceMappingURL=styles.css.map */
