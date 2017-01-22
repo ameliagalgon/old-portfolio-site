@@ -51,9 +51,12 @@ body {
         #header #navigation nav ul li:hover {
           cursor: pointer; }
   #header #social {
-    align-self: center; }
-    #header #social .icon img {
-      width: 30px; }
+    align-self: center;
+    display: flex; }
+    #header #social .icon {
+      padding: 0 10px; }
+      #header #social .icon img {
+        width: 30px; }
 
 #container {
   padding-top: 70px; }

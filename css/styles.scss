@@ -65,7 +65,9 @@ body{
     }
     #social{
         align-self: center;
+        display: flex;
         .icon{
+            padding: 0 10px;
             img{
                 width: 30px;
             }
