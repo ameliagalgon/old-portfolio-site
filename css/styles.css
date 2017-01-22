@@ -132,7 +132,8 @@ body {
       flex-wrap: wrap; }
       #container #projects #project_content .project {
         width: 33.33%;
-        position: relative; }
+        position: relative;
+        height: 228px; }
         #container #projects #project_content .project .background-image {
           position: absolute;
           filter: brightness(20%);
