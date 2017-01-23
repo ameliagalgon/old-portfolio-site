@@ -89,6 +89,14 @@ $(document).ready(function(){
         //alert(htmlString);
         $("#project_info").html("<div class='string animated fadeInUp'>" + htmlString + "<div>"); /*add an fade in animation to the htmlString*/
     });
+    
+    $(window).resize(function(){
+       if($(window).width() <= 860){
+           if($("#portfolio").hasClass("active_class")){
+               console.log("eh");
+           }
+       }
+    });
 });
 
 function switchPages(){
@@ -100,6 +108,7 @@ function switchPages(){
     }
     //clear the html of the project info
     $("#project_info").html('');
+    
 }
 function switchCategories(){
     $current_category.fadeOut(0).removeClass("current_category");

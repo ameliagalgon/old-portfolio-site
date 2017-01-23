@@ -57,6 +57,9 @@ body {
       padding: 0 10px; }
       #header #social .icon img {
         width: 30px; }
+    @media screen and (max-width: 650px) {
+      #header #social {
+        display: none; } }
 
 #container {
   padding-top: 70px; }
@@ -91,6 +94,9 @@ body {
           cursor: pointer; }
           #container #portfolio nav ul li:hover p {
             text-decoration: underline; }
+      @media screen and (max-width: 860px) {
+        #container #portfolio nav {
+          display: none; } }
     #container #portfolio .picture {
       width: 33.33%;
       height: 19vw;
@@ -99,12 +105,21 @@ body {
         width: 100%;
         /* this is only a temporary fix */
         min-height: 100%; }
+      @media screen and (max-width: 650px) {
+        #container #portfolio .picture {
+          width: 50%; } }
+      @media screen and (max-width: 448px) {
+        #container #portfolio .picture {
+          width: 100%; } }
     #container #portfolio .picture:hover {
       filter: brightness(70%); }
-    #container #portfolio #painting, #container #portfolio #drawing, #container #portfolio #design {
+    #container #portfolio .category {
       width: 85%;
       justify-content: flex-start;
       flex-wrap: wrap; }
+      @media screen and (max-width: 860px) {
+        #container #portfolio .category {
+          width: 100%; } }
   #container #projects {
     justify-content: flex-start;
     flex-wrap: wrap; }
