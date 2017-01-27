@@ -99,8 +99,9 @@ body {
           display: none; } }
     #container #portfolio .picture {
       width: 33.33%;
-      height: 19vw;
-      overflow: hidden; }
+      height: 250px;
+      overflow: hidden;
+      background-color: blue; }
       #container #portfolio .picture img {
         width: 100%;
         /* this is only a temporary fix */
