@@ -117,7 +117,14 @@ body {
     #container #portfolio .category {
       width: 85%;
       justify-content: flex-start;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-bottom: 30px; }
+      #container #portfolio .category h3 {
+        width: 100%;
+        text-align: center;
+        text-transform: lowercase;
+        color: #555;
+        display: none; }
       @media screen and (max-width: 860px) {
         #container #portfolio .category {
           width: 100%; } }

@@ -94,17 +94,21 @@ $(document).ready(function(){
     
     $(window).resize(function(){
        if($("#portfolio").hasClass("active_page")){
-               if($(window).width() <= 860){
+           if($(window).width() <= 860){
                //display all of the categories in the portfolio
                $("#painting").css("display", "flex");
                $("#drawing").css("display", "flex");
                $("#design").css("display", "flex");
+               //display the category headers
+               $(".category h3").css("display","block");
            }
            else{
                //do not display any of the categories. THis will desfault to using the current_category class
                $("#painting").css("display", "none");
                $("#drawing").css("display", "none");
                $("#design").css("display", "none");
+               //remove the category headers
+               $(".category h3").css("display", "none");
            }
        }
     });
@@ -125,6 +129,8 @@ function switchPages(){
             $("#painting").css("display", "flex");
             $("#drawing").css("display", "flex");
             $("#design").css("display", "flex");
+            //display the headers
+            $(".category h3").css("display", "block");
         }
     }
 }

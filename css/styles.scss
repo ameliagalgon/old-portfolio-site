@@ -150,6 +150,14 @@ body{
             //display: flex;
             justify-content: flex-start;
             flex-wrap: wrap;
+            margin-bottom: 30px;
+            h3{
+                width: 100%;
+                text-align: center;
+                text-transform: lowercase;
+                color: #555;
+                display: none;
+            }
             @media screen and (max-width: 860px){
                 width: 100%;
             }
