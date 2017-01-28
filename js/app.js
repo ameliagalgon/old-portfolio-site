@@ -67,6 +67,7 @@ $(document).ready(function(){
         $current_page_link = $(".active_page_link");
         $next_page_link = $("#projects_link p");
         switchPages();
+        displayProjectImages();
     });
     //about link
     $("#about_link").click(function(){
@@ -144,6 +145,18 @@ function displayImages(){
         portfolioArray.eq(i).css("background-size", "cover");
         portfolioArray.eq(i).css("background-position", "center");
         
+    }
+}
+
+function displayProjectImages(){
+    var projectsArray = $(".project");
+    for(var i = 0; i < projectsArray.length; i++){
+        var image = projectsArray.eq(i).find(".background-image img").attr("src");
+        //change the background to display the image
+        projectsArray.eq(i).css("background-image", "url(" + image + ")");
+        projectsArray.eq(i).css("background-position", "center");
+        projectsArray.eq(i).css("background-size", "cover");
+        $(".background-image").css("filter", "brightness: 50%");
     }
 }
 

@@ -198,6 +198,7 @@ body{
             position: relative;
             display:flex;
             flex-wrap: wrap;
+            background-color: blue;
             .project{
                 width: 33.33%;
                 position: relative;
@@ -207,6 +208,7 @@ body{
                     filter: brightness(20%);
                     //width: 33.33%;
                     height: 33vh;
+                    display: none;
                     img{
                         width:100%;
                         height:33vh;
