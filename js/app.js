@@ -88,9 +88,17 @@ $(document).ready(function(){
     
     //if a project is clicked, show the discription of that project
     $(".project").click(function(){
-        var htmlString = $(this).find(".discription").html();
-        //alert(htmlString);
-        $("#project_info").html("<div class='string animated fadeInUp'>" + htmlString + "<div>"); /*add an fade in animation to the htmlString*/
+        if($(window).width()>650){
+            var htmlString = $(this).find(".discription").html();
+            //alert(htmlString);
+            $("#project_info").html("<div class='string animated fadeInUp'>" + htmlString + "<div>"); /*add an fade in animation to the htmlString*/
+        }
+        else{
+            //get the link and link to a new page instead of showing the description
+            var link = $(this).find(".discription a").attr("href");
+            //alert(link);
+            window.open(link);
+        }
     });
     
     $(window).resize(function(){

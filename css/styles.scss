@@ -189,6 +189,12 @@ body{
                 width: 23%;
             }
             @media screen and (max-width: 860px){
+                width: 35%;
+                .string{
+                    width: 33%;
+                }
+            }
+            @media screen and (max-width: 650px){
                 display: none;
             }
         }
@@ -234,8 +240,10 @@ body{
                 position: absolute;
                 width: 100%;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+                align-content: center;
                 background: rgba(0,0,0,0.5);
                 height: 228px;
                 img{
@@ -243,15 +251,32 @@ body{
                     height: auto;
                     //margin: auto;
                 }
+                h3{
+                    width: 100%;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 0.90em;
+                    text-align: center;
+                    display: none;
+                }
             }
             @media screen and (max-width: 860px){
+                width: 65%;
+                .project{
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width: 650px){
                 width: 100%;
+                .overlay{
+                    h3{
+                        display: block;
+                    }
+                }
+            }
+            @media screen and (max-width: 448px){
                 .project{
                     width: 100%;
-                    height: 500px;
-                    .overlay{
-                        display: none;
-                    }
                 }
             }
         }
