@@ -57,7 +57,7 @@ body {
       padding: 0 10px; }
       #header #social .icon img {
         width: 30px; }
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 860px) {
       #header #social {
         display: none; } }
 
