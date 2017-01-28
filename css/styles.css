@@ -148,6 +148,9 @@ body {
       #container #projects #project_info .string {
         position: fixed;
         width: 23%; }
+      @media screen and (max-width: 860px) {
+        #container #projects #project_info {
+          display: none; } }
     #container #projects #project_content {
       width: 75%;
       position: relative;
@@ -180,10 +183,19 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 49px; }
+        background: rgba(0, 0, 0, 0.5);
+        height: 228px; }
         #container #projects #project_content .overlay img {
           width: 35%;
           height: auto; }
+      @media screen and (max-width: 860px) {
+        #container #projects #project_content {
+          width: 100%; }
+          #container #projects #project_content .project {
+            width: 100%;
+            height: 500px; }
+            #container #projects #project_content .project .overlay {
+              display: none; } }
   #container #about {
     height: 400px; }
   #container #contact {

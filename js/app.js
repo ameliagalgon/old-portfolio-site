@@ -156,7 +156,7 @@ function displayProjectImages(){
         projectsArray.eq(i).css("background-image", "url(" + image + ")");
         projectsArray.eq(i).css("background-position", "center");
         projectsArray.eq(i).css("background-size", "cover");
-        $(".background-image").css("filter", "brightness: 50%");
+        //projectsArray.eq(i).css("filter", "brightness(50%)");
     }
 }
 
