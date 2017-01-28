@@ -23,6 +23,8 @@ $(document).ready(function(){
         $current_page_link = $(".active_page_link");
         $next_page_link = $("#portfolio_link p");
         switchPages();
+        //make the background of the link the painting
+        displayImages();
         //in case there is already a current category
         $current_category = $(".current_category");
         if($current_category == null){
@@ -110,6 +112,19 @@ function switchPages(){
     $("#project_info").html('');
     
 }
+
+function displayImages(){
+    var portfolioArray = $(".picture");
+    //alert(portfolioArray.length);
+    for(var i = 0; i < portfolioArray.length; i++){
+        var image = portfolioArray.eq(i).attr("href");
+        portfolioArray.eq(i).css("background-image", "url(" + image + ")");
+        portfolioArray.eq(i).css("background-size", "cover");
+        portfolioArray.eq(i).css("background-position", "center");
+        
+    }
+}
+
 function switchCategories(){
     $current_category.fadeOut(0).removeClass("current_category");
     $next_category.fadeIn(500).addClass("current_category");

@@ -100,12 +100,12 @@ body {
     #container #portfolio .picture {
       width: 33.33%;
       height: 250px;
-      overflow: hidden;
-      background-color: blue; }
+      overflow: hidden; }
       #container #portfolio .picture img {
         width: 100%;
         /* this is only a temporary fix */
-        min-height: 100%; }
+        min-height: 100%;
+        display: none; }
       @media screen and (max-width: 650px) {
         #container #portfolio .picture {
           width: 50%; } }
