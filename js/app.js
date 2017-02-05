@@ -102,24 +102,26 @@ $(document).ready(function(){
     });
     
     $(window).resize(function(){
-       if($("#portfolio").hasClass("active_page")){
-           if($(window).width() <= 860){
-               //display all of the categories in the portfolio
-               $("#painting").css("display", "flex");
-               $("#drawing").css("display", "flex");
-               $("#design").css("display", "flex");
-               //display the category headers
-               $(".category h3").css("display","block");
-           }
-           else{
-               //do not display any of the categories. THis will desfault to using the current_category class
-               $("#painting").css("display", "none");
-               $("#drawing").css("display", "none");
-               $("#design").css("display", "none");
-               //remove the category headers
-               $(".category h3").css("display", "none");
-           }
-       }
+        if($(window).width() <= 860){
+            //remove the text in the homepage logo
+            $("#logo").html("<img src='Amelia_logo.png' alt='Amelia Galgon'>")
+            //display all of the categories in the portfolio
+            $("#painting").css("display", "flex");
+            $("#drawing").css("display", "flex");
+            $("#design").css("display", "flex");
+            //display the category headers
+            $(".category h3").css("display","block");
+        }
+        else{
+            //return the text 'amelia galgon' to the logo
+            $("#logo").html("<img src='Amelia_logo.png' alt='Amelia Galgon'>Amelia Galgon")
+            //do not display any of the categories. THis will desfault to using the current_category class
+            $("#painting").css("display", "none");
+            $("#drawing").css("display", "none");
+            $("#design").css("display", "none");
+            //remove the category headers
+            $(".category h3").css("display", "none");
+        }
     });
 });
 
