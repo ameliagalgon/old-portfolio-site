@@ -142,6 +142,8 @@ body {
       #container #projects #project_info p {
         padding: 0 20px;
         line-height: 23px; }
+        #container #projects #project_info p .int_link {
+          padding: 0; }
       #container #projects #project_info a {
         padding: 0 20px;
         color: #555; }
