@@ -101,6 +101,10 @@ $(document).ready(function(){
         }
     });
     
+    if($(window).width()<=500){
+        //remove the text in the homepage logo
+        $("#logo").html("<img src='Amelia_logo.png' alt='Amelia Galgon'>")
+    }
     $(window).resize(function(){
         if($(window).width() <= 860){
             //remove the text in the homepage logo

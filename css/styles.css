@@ -20,6 +20,9 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+  @media screen and (max-width: 500px) {
+    #header {
+      padding: 10px 10px; } }
   #header #navigation {
     display: flex;
     justify-content: flex-start;
