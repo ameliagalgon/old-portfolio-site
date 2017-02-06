@@ -67,12 +67,73 @@ body {
 #container {
   padding-top: 70px; }
   #container #home {
+    /*
     height: 85vh;
     width: 100vw;
     background-image: url(../img/Amelia5.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    */
+    height: 90vh;
+    width: 100vw; }
+    #container #home #home_projects {
+      width: 33%;
+      background-image: url("../img/cafe");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #container #home #home_projects p {
+        display: none; }
+    #container #home #home_about {
+      width: 33%;
+      background-image: url("../img/Amelia5.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      #container #home #home_about p {
+        display: none; }
+    #container #home #home_portfolio {
+      width: 33%;
+      background-image: url("../portfolio/self_portrait.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      #container #home #home_portfolio p {
+        display: none; }
+    #container #home #home_projects:hover p, #container #home #home_about:hover p, #container #home #home_portfolio:hover p {
+      font-size: 3em;
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+      height: 90vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.7); }
+    #container #home #alt_text {
+      display: none; }
+    @media screen and (max-width: 950px) {
+      #container #home {
+        background-image: url(../img/Amelia5.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+        #container #home #home_projects, #container #home #home_about, #container #home #home_portfolio {
+          display: none; }
+        #container #home #alt_text {
+          display: flex;
+          width: 100%;
+          height: 90vh;
+          font-size: 3em;
+          background: rgba(0, 0, 0, 0.7);
+          color: #fff;
+          align-items: center;
+          padding-left: 20px; } }
   #container .page {
     display: none; }
   #container #portfolio {
@@ -221,9 +282,15 @@ body {
         #container #projects #project_content .project {
           width: 100%; } }
   #container #about {
-    height: 400px; }
-  #container #contact {
-    height: 400px; }
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding-top: 40px; }
+    #container #about img {
+      width: 30%;
+      height: auto; }
+    #container #about #about_content {
+      width: 50%; }
   #container footer {
     display: flex;
     justify-content: center;
