@@ -56,6 +56,9 @@ body{
                         text-transform: lowercase;
                         margin: 0;
                     }
+                    @media screen and (max-width:650px){
+                        padding: 0 5px;
+                    }
                 }
                 li:hover{
                     cursor: pointer;
