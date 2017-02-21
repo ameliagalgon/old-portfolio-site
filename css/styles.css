@@ -94,7 +94,8 @@ body {
         text-align: center; }
     #container #home #art_portfolio {
       background-color: #fff;
-      color: #666; }
+      color: #666;
+      height: 400px; }
       #container #home #art_portfolio .port_prev {
         width: 100%;
         display: flex;
@@ -103,9 +104,12 @@ body {
           width: 28%; }
           #container #home #art_portfolio .port_prev .thumbnail img {
             width: 100%; }
+        #container #home #art_portfolio .port_prev .fadeInUp {
+          animation-duration: 0.75s !important; }
     #container #home #technology_projects {
       background-color: #000;
-      color: #fff; }
+      color: #fff;
+      height: 300px; }
       #container #home #technology_projects ul {
         list-style: none; }
         #container #home #technology_projects ul li {

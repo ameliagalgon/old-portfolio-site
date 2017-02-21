@@ -115,6 +115,7 @@ body{
         #art_portfolio{
             background-color: #fff;
             color: #666;
+            height: 400px;
             .port_prev{
                 width: 100%;
                 display: flex;
@@ -125,11 +126,15 @@ body{
                         width: 100%;
                     }
                 }
+                .fadeInUp{
+                    animation-duration: 0.75s !important;
+                }
             }
         }
         #technology_projects{
             background-color: #000;
             color: #fff;
+            height: 300px;
             ul{
                 list-style: none;
                 li{

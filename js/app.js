@@ -7,6 +7,22 @@ var $next_link = null;
 var $current_page_link = null;
 var $next_page_link = null;
 $(document).ready(function(){
+    //scrolling
+    $(".thumbnail").css("display","none");
+    $("#technology_projects ul").css("display","none");
+    $(window).scroll(function(){
+       console.log($(window).scrollTop());
+        //at 265, show the art thumbnails
+        if($(window).scrollTop()>265){
+            $(".thumbnail").css("display","block");
+            $(".thumbnail").addClass("animated fadeInUp");
+        }
+        //at 860, how the techno list
+        if($(window).scrollTop()>860){
+            $("#technology_projects ul").css("display","block");
+            $("#technology_projects ul").addClass("animated fadeInRightBig");
+        }
+    });
    $("#home").addClass("active_page");
     //home page link
     $("#logo").click(function(){
