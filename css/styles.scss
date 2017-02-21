@@ -13,6 +13,7 @@ body{
     a:hover{
         text-decoration: underline;
     }
+    //background-color: pink;
 }
 #header{
     position:fixed;
@@ -86,15 +87,6 @@ body{
 #container{
     padding-top: 70px;
     #home{
-        //background-color: yellow;
-        /*
-        height: 85vh;
-        width: 100vw;
-        background-image: url(../img/Amelia5.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        */
         height: 90vh;
         width: 100vw;
         #home_projects{
@@ -167,11 +159,13 @@ body{
             }
         }
     }
+    /*
     .page{
         display: none;
     }
+    */
     #portfolio{
-        //display: flex;
+        display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         nav{

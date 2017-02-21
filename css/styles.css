@@ -68,16 +68,13 @@ body {
         display: none; } }
 
 #container {
-  padding-top: 70px; }
+  padding-top: 70px;
+  /*
+  .page{
+      display: none;
+  }
+  */ }
   #container #home {
-    /*
-    height: 85vh;
-    width: 100vw;
-    background-image: url(../img/Amelia5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    */
     height: 90vh;
     width: 100vw; }
     #container #home #home_projects {
@@ -137,9 +134,8 @@ body {
           color: #fff;
           align-items: center;
           padding-left: 20px; } }
-  #container .page {
-    display: none; }
   #container #portfolio {
+    display: flex;
     justify-content: flex-start;
     flex-wrap: wrap; }
     #container #portfolio nav {
