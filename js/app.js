@@ -148,6 +148,9 @@ function switchPages(){
             $(".category h3").css("display", "block");
         }
     }
+    //make sure the scrolling is set to the top of the page
+    var scroll = $(window).scrollTop();
+    $("html").scrollTop(scroll);
 }
 
 function displayImages(){
