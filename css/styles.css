@@ -81,14 +81,41 @@ body {
       justify-content: center;
       font-size: 3em; }
     #container #home .section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: flex-start;
       width: 100vw;
-      height: 600px; }
-    #container #home #sec_one {
-      background-color: pink; }
-    #container #home #sec_two {
-      background-color: yellow; }
-    #container #home #sec_three {
-      background-color: lightblue; }
+      padding: 20px 10px 100px 10px; }
+      #container #home .section h1 {
+        text-transform: lowercase;
+        font-size: 3em;
+        width: 100%;
+        text-align: center; }
+    #container #home #art_portfolio {
+      background-color: #fff;
+      color: #666; }
+      #container #home #art_portfolio .port_prev {
+        width: 100%;
+        display: flex;
+        justify-content: space-around; }
+        #container #home #art_portfolio .port_prev .thumbnail {
+          width: 28%; }
+          #container #home #art_portfolio .port_prev .thumbnail img {
+            width: 100%; }
+    #container #home #technology_projects {
+      background-color: #000;
+      color: #fff; }
+      #container #home #technology_projects ul {
+        list-style: none; }
+        #container #home #technology_projects ul li {
+          font-size: 1.8em;
+          margin-bottom: 20px; }
+    #container #home #contact {
+      background-color: #fff; }
+      #container #home #contact p {
+        width: 100%;
+        text-align: center; }
   #container .page {
     display: none; }
   #container #portfolio {

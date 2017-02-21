@@ -99,17 +99,51 @@ body{
             font-size: 3em;
         }
         .section{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: flex-start;
             width: 100vw;
-            height: 600px;
+            padding: 20px 10px 100px 10px;
+            h1{
+                text-transform: lowercase;
+                font-size: 3em;
+                width: 100%;
+                text-align: center;
+            }
         }
-        #sec_one{
-            background-color: pink;
+        #art_portfolio{
+            background-color: #fff;
+            color: #666;
+            .port_prev{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                .thumbnail{
+                    width: 28%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
         }
-        #sec_two{
-            background-color: yellow;
+        #technology_projects{
+            background-color: #000;
+            color: #fff;
+            ul{
+                list-style: none;
+                li{
+                    font-size: 1.8em;
+                    margin-bottom: 20px;
+                }
+            }
         }
-        #sec_three{
-            background-color: lightblue;
+        #contact{
+            background-color: #fff;
+            p{
+                width: 100%;
+                text-align:center;
+            }
         }
     }
     .page{
