@@ -87,85 +87,36 @@ body{
 #container{
     padding-top: 70px;
     #home{
-        height: 90vh;
-        width: 100vw;
-        #home_projects{
-            width: 33%;
-            background-image: url("../img/cafe");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        flex-wrap: wrap;
+        #banner{
+            width: 100vw;
+            height: 500px;
+            background-color: #000;
+            color: #fff;
             display: flex;
-            justify-content: center;
             align-items: center;
-            p{
-                display: none;
-            }
+            justify-content: center;
+            font-size: 3em;
         }
-        #home_about{
-            width: 33%;
-            background-image: url("../img/Amelia5.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            p{
-                display: none;
-            }
+        .section{
+            width: 100vw;
+            height: 600px;
         }
-        #home_portfolio{
-            width: 33%;
-            background-image: url("../portfolio/self_portrait.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            p{
-                display: none;
-            }
+        #sec_one{
+            background-color: pink;
         }
-        #home_projects:hover, #home_about:hover, #home_portfolio:hover{
-            p{
-                font-size: 3em;
-                color: #fff;
-                text-align: center;
-                padding: 0 20px;
-                height: 90vh;
-                margin: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: rgba(0,0,0,0.7);
-            }
+        #sec_two{
+            background-color: yellow;
         }
-        #alt_text{
-            display: none;
-        }
-        @media screen and (max-width: 950px){
-            #home_projects, #home_about, #home_portfolio{
-                display: none;
-            }
-            background-image: url(../img/Amelia5.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            #alt_text{
-                display: flex;
-                width: 100%;
-                height: 90vh;
-                font-size: 3em;
-                background: rgba(0,0,0,0.7);
-                color: #fff;
-                align-items: center;
-                padding-left: 20px;
-            }
+        #sec_three{
+            background-color: lightblue;
         }
     }
-    /*
     .page{
         display: none;
     }
-    */
     #portfolio{
-        display: flex;
+        //display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         nav{
