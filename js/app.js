@@ -18,7 +18,7 @@ $(document).ready(function(){
             $(".thumbnail").addClass("animated fadeInUp");
         }
         //at 860, how the techno list
-        if($(window).scrollTop()>860){
+        if($(window).scrollTop()>750){
             $("#technology_projects ul").css("display","block");
             $("#technology_projects ul").addClass("animated fadeInRightBig");
         }
