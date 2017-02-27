@@ -34,25 +34,11 @@ $(document).ready(function(){
     });
     //portfolio link
     $("#portfolio_link").click(function(){
-        $current_page = $(".active_page");
-        $next_page = $("#portfolio");
-        $current_page_link = $(".active_page_link");
-        $next_page_link = $("#portfolio_link p");
-        switchPages();
-        //make the background of the link the painting
-        displayImages();
-        //in case there is already a current category
-        $current_category = $(".current_category");
-        if($current_category == null){
-            $("#painting").addClass("current_category");
-            $("#painting_link").addClass("current");
-        }
-        else{
-            $next_category = $("#painting");
-            $current_link = $(".current");
-            $next_link = $("#painting_link");
-            switchCategories();
-        }
+        goToArtPortfolio();
+    });
+    //same thing for portfolio preview on home page
+    $('#art_portfolio').click(function(){
+        goToArtPortfolio();
     });
     //painting, drawing and design
     $("#painting_link").click(function(){
@@ -78,12 +64,11 @@ $(document).ready(function(){
     });
     //projects link
     $("#projects_link").click(function(){
-        $current_page = $(".active_page");
-        $next_page = $("#projects");
-        $current_page_link = $(".active_page_link");
-        $next_page_link = $("#projects_link p");
-        switchPages();
-        displayProjectImages();
+        goToTechnologyProjects();    
+    });
+    //same thing for technology projects section on homepage
+    $("#technology_projects").click(function(){
+       goToTechnologyProjects(); 
     });
     //about link
     $("#about_link").click(function(){
@@ -198,4 +183,35 @@ function switchCategories(){
     $next_category.fadeIn(500).addClass("current_category");
     $current_link.removeClass("current");
     $next_link.addClass("current");
+}
+
+function goToArtPortfolio(){
+    $current_page = $(".active_page");
+    $next_page = $("#portfolio");
+    $current_page_link = $(".active_page_link");
+    $next_page_link = $("#portfolio_link p");
+    switchPages();
+    //make the background of the link the painting
+    displayImages();
+    //in case there is already a current category
+    $current_category = $(".current_category");
+    if($current_category == null){
+        $("#painting").addClass("current_category");
+        $("#painting_link").addClass("current");
+    }
+    else{
+        $next_category = $("#painting");
+        $current_link = $(".current");
+        $next_link = $("#painting_link");
+        switchCategories();
+    }
+}
+
+function goToTechnologyProjects(){
+    $current_page = $(".active_page");
+    $next_page = $("#projects");
+    $current_page_link = $(".active_page_link");
+    $next_page_link = $("#projects_link p");
+    switchPages();
+    displayProjectImages();
 }
