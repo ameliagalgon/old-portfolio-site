@@ -11,7 +11,7 @@ $(document).ready(function(){
     $(".thumbnail").css("display","none");
     $("#technology_projects ul").css("display","none");
     $(window).scroll(function(){
-       console.log($(window).scrollTop());
+       //console.log($(window).scrollTop());
         //at 265, show the art thumbnails
         if($(window).scrollTop()>265){
             $(".thumbnail").css("display","block");
@@ -150,8 +150,9 @@ function switchPages(){
         }
     }
     //make sure the scrolling is set to the top of the page
-    var scroll = $(window).scrollTop();
-    $("html").scrollTop(scroll);
+    //var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    $("html, body").animate({scrollTop: 0}, 0);
 }
 
 function displayImages(){
